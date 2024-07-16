@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://localhost:8080/Java_Spring_MVC_Hibernate_war_exploded/updateUser" method="post">
+    <input type="hidden" name="id" th:value="${user.getId()}">
+    <input type="text" name="email" th:value="${user.getEmail()}">
+    <input type="text" name="name" th:value="${user.getName()}">
+    <input type="text" name="lastName" th:value="${user.getLastName()}">
+    <input type="text" name="age" th:value="${user.getAge()}">
+    <button type="submit">Update</button>
+</form>
+</body>
+</html>
