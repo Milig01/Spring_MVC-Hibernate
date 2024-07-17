@@ -21,20 +21,20 @@
                 <td th:text="${user.getLastName()}"></td>
                 <td th:text="${user.getAge()}"></td>
                 <td>
-                    <form action="http://localhost:8080/Java_Spring_MVC_Hibernate_war_exploded/delete" method="post">
+                    <form action="delete" method="post">
                         <input type="hidden" name="id" th:value="${user.getId()}">
                         <button type="submit">Delete</button>
                     </form>
                 </td>
                 <td>
-                    <form action="http://localhost:8080/Java_Spring_MVC_Hibernate_war_exploded/update" method="get">
+                    <form action="update" method="get">
                         <input type="hidden" name="id" th:value="${user.getId()}">
                         <button type="submit">Update</button>
                     </form>
                 </td>
             </tr>
         </table>
-        <form action="http://localhost:8080/Java_Spring_MVC_Hibernate_war_exploded/pageAdd" method="get">
+        <form action="pageAdd" method="get">
             <button type="submit">Add User</button>
         </form>
     </body>
